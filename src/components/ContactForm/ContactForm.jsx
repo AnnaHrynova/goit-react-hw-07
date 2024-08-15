@@ -17,17 +17,6 @@ export default function ContactForm() {
     number: "",
   };
 
-//   const handleSubmit = (values, { resetForm }) => {
-//     dispatch(
-//         selectContacts({
-//           id: Date.now().toString(),
-//           name: values.name,
-//           number: values.number,
-//         })
-//       );
-//     resetForm();
-//   };
-
 const handleSubmit = (values, { resetForm }) => {
     const existingContact = contacts.find(
       (contact) => contact.name.toLowerCase() === values.name.toLowerCase()
